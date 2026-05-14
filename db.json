@@ -1,0 +1,639 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin User",
+      "email": "admin@shop.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "u2",
+      "name": "Tech Seller",
+      "email": "seller@shop.com",
+      "password": "seller123",
+      "role": "seller",
+      "createdAt": "2024-01-05"
+    },
+    {
+      "id": "u3",
+      "name": "Fashion Hub",
+      "email": "fashion@shop.com",
+      "password": "fashion123",
+      "role": "seller",
+      "createdAt": "2024-01-08"
+    },
+    {
+      "id": "u4",
+      "name": " saraelamir",
+      "email": "sara@shop.com",
+      "password": "sara1234",
+      "role": "customer",
+      "createdAt": "2024-01-10"
+    },
+    {
+      "id": "u5",
+      "name": "Sara Smith",
+      "email": "sara@shop.com",
+      "password": "sara123",
+      "role": "customer",
+      "createdAt": "2024-01-12"
+    },
+    {
+      "id": "t6_WNPJWfRo",
+      "name": "Saraa Elamir",
+      "email": "emanelamir929@gmail.com",
+      "password": "eman2004",
+      "role": "seller",
+      "createdAt": "2026-05-13"
+    },
+    {
+      "id": "5QEfAKodewU",
+      "name": "sara elamir",
+      "email": "saraaelamir@gmail.com",
+      "password": "sara123",
+      "role": "seller",
+      "createdAt": "2026-05-14"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "title": "Sony WH-1000XM5 Headphones",
+      "description": "Industry-leading noise canceling with Auto NC Optimizer. Up to 30-hour battery life with quick charging. Crystal clear hands-free calling.",
+      "price": 349.99,
+      "originalPrice": 399.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+      "category": "Electronics",
+      "stock": 45,
+      "sellerId": "u2",
+      "rating": 4.8,
+      "reviews": 1240,
+      "tags": [
+        "headphones",
+        "sony",
+        "wireless",
+        "noise-canceling"
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Apple MacBook Pro 14-inch M3",
+      "description": "Supercharged by M3 Pro or M3 Max, MacBook Pro breaks new boundaries with groundbreaking performance. Up to 22 hours battery life.",
+      "price": 1999,
+      "originalPrice": 2199,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500",
+      "category": "Electronics",
+      "stock": 18,
+      "sellerId": "u2",
+      "rating": 4.9,
+      "reviews": 856,
+      "tags": [
+        "apple",
+        "macbook",
+        "laptop",
+        "m3"
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Samsung 65\" 4K OLED Smart TV",
+      "description": "Experience breathtaking picture quality with Samsung OLED. Quantum HDR OLED+ delivers exceptional brightness and deep blacks.",
+      "price": 1299.99,
+      "originalPrice": 1799.99,
+      "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500",
+      "category": "Electronics",
+      "stock": 12,
+      "sellerId": "u2",
+      "rating": 4.7,
+      "reviews": 432,
+      "tags": [
+        "samsung",
+        "tv",
+        "oled",
+        "4k"
+      ]
+    },
+    {
+      "id": "p5",
+      "title": "Gaming Mechanical Keyboard RGB",
+      "description": "Premium mechanical keyboard with Cherry MX switches. Full RGB backlighting with 16.8M colors. N-key rollover anti-ghosting.",
+      "price": 129.99,
+      "originalPrice": 159.99,
+      "image": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500",
+      "category": "Electronics",
+      "stock": 75,
+      "sellerId": "u2",
+      "rating": 4.6,
+      "reviews": 890,
+      "tags": [
+        "keyboard",
+        "gaming",
+        "rgb",
+        "mechanical"
+      ]
+    },
+    {
+      "id": "p6",
+      "title": "Nike Air Max 270 Sneakers",
+      "description": "The Nike Air Max 270 delivers a look inspired by two of Nike's greatest performers. Foam midsole with large Max Air unit for all-day comfort.",
+      "price": 149.99,
+      "originalPrice": 180,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+      "category": "Fashion",
+      "stock": 60,
+      "sellerId": "u3",
+      "rating": 4.5,
+      "reviews": 3400,
+      "tags": [
+        "nike",
+        "sneakers",
+        "shoes",
+        "airmax"
+      ]
+    },
+    {
+      "id": "p7",
+      "title": "Premium Leather Jacket Men",
+      "description": "Genuine lambskin leather jacket with quilted lining. Classic biker design with asymmetric zip. Perfect for all seasons.",
+      "price": 299,
+      "originalPrice": 450,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500",
+      "category": "Fashion",
+      "stock": 25,
+      "sellerId": "u3",
+      "rating": 4.7,
+      "reviews": 567,
+      "tags": [
+        "jacket",
+        "leather",
+        "mens",
+        "fashion"
+      ]
+    },
+    {
+      "id": "p8",
+      "title": "Elegant Summer Dress Floral",
+      "description": "Lightweight floral print midi dress perfect for summer. V-neck design with adjustable straps. Available in multiple sizes.",
+      "price": 59.99,
+      "originalPrice": 89.99,
+      "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500",
+      "category": "Fashion",
+      "stock": 80,
+      "sellerId": "u3",
+      "rating": 4.4,
+      "reviews": 1200,
+      "tags": [
+        "dress",
+        "summer",
+        "floral",
+        "women"
+      ]
+    },
+    {
+      "id": "p9",
+      "title": "Ray-Ban Aviator Sunglasses",
+      "description": "Classic aviator design with metal frame and glass lenses. 100% UV protection. Iconic style since 1937.",
+      "price": 169.99,
+      "originalPrice": 200,
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500",
+      "category": "Fashion",
+      "stock": 50,
+      "sellerId": "u3",
+      "rating": 4.8,
+      "reviews": 2300,
+      "tags": [
+        "rayban",
+        "sunglasses",
+        "aviator",
+        "uv"
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "Luxury Handbag Tote Brown",
+      "description": "Premium PU leather tote bag with multiple compartments. Magnetic closure with zip pocket. Perfect for work or travel.",
+      "price": 89.99,
+      "originalPrice": 120,
+      "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500",
+      "category": "Fashion",
+      "stock": 40,
+      "sellerId": "u3",
+      "rating": 4.3,
+      "reviews": 780,
+      "tags": [
+        "handbag",
+        "tote",
+        "leather",
+        "women"
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "Minimalist Coffee Table Nordic",
+      "description": "Scandinavian design solid wood coffee table. Easy assembly with included hardware. Dimensions: 120x60x45cm.",
+      "price": 249.99,
+      "originalPrice": 299.99,
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500",
+      "category": "Home",
+      "stock": 20,
+      "sellerId": "u2",
+      "rating": 4.6,
+      "reviews": 340,
+      "tags": [
+        "furniture",
+        "table",
+        "nordic",
+        "wood"
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "Aromatherapy Diffuser Set",
+      "description": "Ultrasonic essential oil diffuser with 7 color LED lights. Covers up to 300 sq ft. Includes 6 essential oils.",
+      "price": 39.99,
+      "originalPrice": 59.99,
+      "image": "https://images.unsplash.com/photo-1608181831718-f48ec1bf8ef0?w=500",
+      "category": "Home",
+      "stock": 100,
+      "sellerId": "u3",
+      "rating": 4.5,
+      "reviews": 1560,
+      "tags": [
+        "diffuser",
+        "aromatherapy",
+        "home",
+        "wellness"
+      ]
+    },
+    {
+      "id": "p13",
+      "title": "Smart Robot Vacuum Cleaner",
+      "description": "Self-charging robot vacuum with LiDAR navigation. App control via smartphone. 2700Pa suction power. Works on all floor types.",
+      "price": 449.99,
+      "originalPrice": 599.99,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500",
+      "category": "Home",
+      "stock": 15,
+      "sellerId": "u2",
+      "rating": 4.7,
+      "reviews": 892,
+      "tags": [
+        "vacuum",
+        "robot",
+        "smart",
+        "cleaning"
+      ]
+    },
+    {
+      "id": "p14",
+      "title": "Stainless Steel Cookware Set 10pc",
+      "description": "Professional grade 10-piece cookware set. Tri-ply stainless steel with aluminum core. Dishwasher safe. Oven safe up to 500°F.",
+      "price": 199.99,
+      "originalPrice": 280,
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500",
+      "category": "Home",
+      "stock": 35,
+      "sellerId": "u3",
+      "rating": 4.8,
+      "reviews": 670,
+      "tags": [
+        "cookware",
+        "kitchen",
+        "stainless",
+        "cooking"
+      ]
+    },
+    {
+      "id": "p15",
+      "title": "Yoga Mat Non-Slip Premium",
+      "description": "Eco-friendly TPE yoga mat with alignment lines. Non-slip texture on both sides. 6mm thick for joint protection. Includes carry strap.",
+      "price": 49.99,
+      "originalPrice": 65,
+      "image": "https://images.unsplash.com/photo-1601925228008-aa04e5c6ee3f?w=500",
+      "category": "Sports",
+      "stock": 120,
+      "sellerId": "u3",
+      "rating": 4.6,
+      "reviews": 2100,
+      "tags": [
+        "yoga",
+        "mat",
+        "fitness",
+        "exercise"
+      ]
+    },
+    {
+      "id": "p16",
+      "title": "Adjustable Dumbbell Set 5-52.5lb",
+      "description": "Replaces 15 sets of weights. Adjustable from 5 to 52.5 pounds in 2.5 lb increments. Durable metal handle with secure locking mechanism.",
+      "price": 399.99,
+      "originalPrice": 499.99,
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500",
+      "category": "Sports",
+      "stock": 22,
+      "sellerId": "u2",
+      "rating": 4.9,
+      "reviews": 1340,
+      "tags": [
+        "dumbbells",
+        "weights",
+        "gym",
+        "fitness"
+      ]
+    },
+    {
+      "id": "p17",
+      "title": "Mountain Bike 26\" Aluminium",
+      "description": "21-speed mountain bike with Shimano gears. Front suspension fork. Alloy frame. Dual disc brakes. Suitable for all terrains.",
+      "price": 549,
+      "originalPrice": 699,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500",
+      "category": "Sports",
+      "stock": 8,
+      "sellerId": "u2",
+      "rating": 4.5,
+      "reviews": 234,
+      "tags": [
+        "bike",
+        "mountain",
+        "cycling",
+        "outdoor"
+      ]
+    },
+    {
+      "id": "p18",
+      "title": "Atomic Habits - James Clear",
+      "description": "The #1 New York Times bestseller. Tiny Changes, Remarkable Results. An Easy & Proven Way to Build Good Habits & Break Bad Ones.",
+      "price": 16.99,
+      "originalPrice": 27,
+      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500",
+      "category": "Books",
+      "stock": 200,
+      "sellerId": "u3",
+      "rating": 4.9,
+      "reviews": 45000,
+      "tags": [
+        "book",
+        "habits",
+        "self-help",
+        "bestseller"
+      ]
+    },
+    {
+      "id": "p19",
+      "title": "The Psychology of Money",
+      "description": "Timeless lessons on wealth, greed, and happiness. Morgan Housel explores the strange ways people think about money.",
+      "price": 14.99,
+      "originalPrice": 22,
+      "image": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=500",
+      "category": "Books",
+      "stock": 150,
+      "sellerId": "u3",
+      "rating": 4.8,
+      "reviews": 28000,
+      "tags": [
+        "book",
+        "money",
+        "finance",
+        "psychology"
+      ]
+    },
+    {
+      "id": "p20",
+      "title": "Wireless Earbuds Pro ANC",
+      "description": "Active Noise Cancellation with Transparency mode. 30-hour total battery life with case. IPX4 water resistant. Custom EQ via app.",
+      "price": 79.99,
+      "originalPrice": 129.99,
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500",
+      "category": "Electronics",
+      "stock": 90,
+      "sellerId": "u2",
+      "rating": 4.4,
+      "reviews": 5600,
+      "tags": [
+        "earbuds",
+        "wireless",
+        "anc",
+        "audio"
+      ]
+    },
+    {
+      "id": "p21",
+      "title": "Smart Watch Series 9 GPS",
+      "description": "Advanced health sensors: ECG, blood oxygen, skin temperature. Crash Detection. Carbon neutral. Always-On Retina display.",
+      "price": 399,
+      "originalPrice": 429,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+      "category": "Electronics",
+      "stock": 55,
+      "sellerId": "u2",
+      "rating": 4.8,
+      "reviews": 3200,
+      "tags": [
+        "smartwatch",
+        "gps",
+        "health",
+        "wearable"
+      ]
+    },
+    {
+      "id": "p22",
+      "title": "Running Shoes Men Lightweight",
+      "description": "Ultra-lightweight running shoes with responsive foam cushioning. Breathable mesh upper. Rubber outsole for traction. Ideal for road running.",
+      "price": 119.99,
+      "originalPrice": 150,
+      "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500",
+      "category": "Sports",
+      "stock": 70,
+      "sellerId": "u3",
+      "rating": 4.5,
+      "reviews": 1800,
+      "tags": [
+        "running",
+        "shoes",
+        "mens",
+        "lightweight"
+      ]
+    },
+    {
+      "id": "hpDrKPyXPc8",
+      "sellerId": "5QEfAKodewU",
+      "title": "iphone17",
+      "description": "iphone 17 whith color orange",
+      "price": 700,
+      "originalPrice": 700,
+      "stock": 6,
+      "category": "Electronics",
+      "image": "data:image/webp;base64,UklGRoAYAABXRUJQVlA4IHQYAAAwYwCdASrfAPkAPkkgjUUioiESuUXcKASEpuCsa7lfYAwwt2/+U/h/8Lz7+UfAH3FqJfu+/PqfyzOb/+x65f9B+wXun/yP+G9gD+x/3Tpn+ZL9ov2u93//dfuZ7s/7z6gH9R/2/pGezx+33sM/yb/g+nZ7O/9h/5P7me1f//7tR4b+Z/3j7ncz6JT2n/qvXF3B/K//E9Qj2H/reDFAD9c/9/6MP2Pnt4gf5feVd45vmvsE/z3+s/6r/C/kz8h//Z/lfSp9H/+D/HfAn/N/7b/0PXA9iH7ueyl+yn//MLR4BdmflpW0hzv5P04bgdDG7TltcQRBuajSB9iX4UhXatlYSWyXiQNLUNukSm+2e2ZOxfDnRfQTeXtpU79eODLojPFIZ4yUrr6lLWa4cTEb9VS4WFlZA4VcTzV8EP5D38fqQuYWnM0hJdb+uzJDNELKEZMwsr8Muyctz6wdNfE3ifDbTaXayzGRSFdKOzSoM/+fhgLaqc9W8w8J4XuUZTAg9DZZCT5Fsi/LXZcPGthocXpp+mOk9kJHmn+gj2HaZBUPoTA0NloTkeI4TqWkoG9Wmx1O+RJX6jJ3XSIISMf+htkmHaCYy7Dv9AvSaTsAgpc2el03FyZK0F2/A8xn8oCU6tpLJ2oP2lpHnSW56fyAPMIK39ZHrX1DQGssock3sNkqt74WxtDi8gviBjmbWzaFCWL0WdNp5MpXnK+8mVKSQk7XH9msn/vW3Ej+AtcpC42ne2cRuOy6Qx2SYxdyBX/1eW2SAdS5qthPmTJG+AgpNOX/vPOzmHlZShhuKX0/Jrv2Zfr2q04hTMB2kPxbZTSoFz+NJwKeOmorl50sJx3ZnUA5sy7v24DBYrmjPoHJinaesMjf9+O+LhZVohkhrbi4CqGcvgkWxjkF7zuefuOmjQSie0DT7Wwja4G9wxsC9Rf9jCRLH/ZdbKdKjBLEmyF9OL3O/pdg0oTpYPXx5JusrjFzMVToKQrCUte5NIPC5fqhpoCPA/bjvxLRfz0ngQRFRcpyekECCV+Hdcle0u2p1Lpgr/78pdf9K5Q2EuTwDPCTJ+EAAP791pIWHIImUsFTeVaF0gK9n8RLtJq5LhpyVhRGvlsnyaOgtYGBPMvTIlz1zyGSTvnm2jijVP46co/f6sXSCS9Gd0oGcM3qESmkcgoRJXyB3/h320l+U17Vu/nBvFe0kpfqeryXQ1PI6r+dzgHILGg2wefH1xDorWDLYixEYiQ67JtT5SVb6DtjD3sgi3djt+vw2a9vrZPu1nYIuB3s1E3gIgSNAQIg6KKJpERt3j4zJO0cG6ES9MzSlpqakIPQWWUgJvrq98vpXUYO2kB5++tXHbT4OVzTFvYlX8oirZr0ose6THe7OIocR3AQraFlLJpT4t/c1nY0UJqVSo6eZYvYsYY/PdCP9HvX243+sX47YNxSdMmV1Rp+wDrdLTxxz6Kd4hONMV28Mmi+R+y90o2ctgb5xaO2FzVEgWWLvi8RGt5jv9QHT7Dz1kwhQ1JymKYg00RhqwlgsBcm+nJSQPSvfi7N9egRqNOTQqkQlyQnDoE/8H6ea+SeffBMHpB2mc8k029hPYnRYSpW0/QxpXaNi9ucJL9b7wDZZlFpc+EAggZ63RZaUFL41jicVrpm++3w45B0XH/oGGW0d47r5xhWs//9TfPy26y274/bR5IhQ76HpTZ/jJ6/AhqJSu2qpe8Gtd9usnGBaQL6zXWaJcqWBbTUp66o543YCE9iZDiWtOD82MMy3xUgBmPREaB5B14pJ6SuptjSz5p/+o1nQ/a71uxNJYldf9HeBVWzb7wtIuTFGxEczdJ+vC+/yf1lW9J3hPprOTJSuiKT4XEK6xFA9anMDZOo7Esv9HxtujYuMJ6JzKvHwM922DM3sB3P+o1f59bawsGSl90O957NIK0u0D1AWPzcoVZC3v4HLfCEp0CidfM9C/+7JP2mhxvtuDHVB8quDAjckdoMDj3n1DhwM8ddBu+synGeb5FECSJkfR1zQPTKfnEmsQu7jpMVhYzceX9Lwg0p2c7AqJwacnMkrgYvV4JlCabv+/hurpCzSQn1KbcUc0SYT+j8k9HZ6M9cVSPwk/fYqko6e8ibo/5Gxznq4lqVSWqZxVrVBU4w/StRsxBoOWAfE5JSBK3LH3pUO7dt7+9QxGj7xqUvS9vCNRAsKeIuK5/xTWwN5h48rvbjewlpZqq8K3ybO97eebCa62DoxQYeeDQKIrGjh9uqpswCYROwxKwrGqRVcq54G1sXCqEM7hzt0HufXQgVTaFl2Qkuf9Np3F8eJeo51pwNToP3PGMkKwpOBOR/5V1b8IE6+wavmYiocCgkyvwfZN+t5ls/HiugRZ3MJTVjuFKdtp+vG4dXGphd99v7QG0G6GST14/G9odAbdw7OPGQsGvoKmBYFI+eUf9RS5a/6+MxfLBg78HkZEkaC4PE57EUtQOi0/wUnGAAs0fVGugmkL5cfJtK3ZOLxkoaxrjjqB65xFVKf6SzI67jEHThohKh0GclZGeNP6EbkiFHShkd7JbTPDOMbML3Cjtf9tCqeP6K+znv6cY+4VYwQSjsX+1qVf+3T5kivAD+km5gnaQ/9NgB+M5KqzDW5PNJ3yL2lYUh4PoX/HOINMjSHr9FTJ8YOntP9xsYSQRHtsmGsV+9KsKjK3Y530TPGDUwBvBq0rKjnEsUvQgzG0UnxrcH07Hu1uh6TJ/CWBab850E5a9sVjeP47P5+4HvB2g1FCDgAN6UQJ8O4y0PVADd/F1o1cSBoo4AReTL8YI38/KI+Dpf6fKX54d6IsFApiA4VH61wvxzfncmfTFFgu/PQbcxpxyN7d+2DU07YVdv+0bIpacO43PQu0e/1Qz/+7OaSWxfNGesNkCOvC3RIau3nFEqGubXsr8LC3pqPbr9eIrpl0Qfwl1s+cnrKVi1nOqBM7O5QCGLa5DrV38oWwEMdLpURvtaZvTLPhXhPORqqxhm+vd7FO4zAJAlDUgaC8WHeAt/x/p1FL1fD3GT9SDuHpsCFpgRtvXrZp/R7O/ZPwslFEmr/+Qp+Y+KBJOQtYPnCJ3pK1CxEV69PIHVPyrQ8sCsgUjAKQ7QN4V4llydPUwJhaum/8AkHiLKof9rW7y1g4CohEZyk0fCzb7/MQJOooTCHGMedSGwB0d1s13Q2Q8Ki4fGHo97ZwRxL3MUpZZuqYC6t6XKfMIJFKAvqI48WheVviCuDpnZ84yiIwAcurqc1hFr76/SEp4dlZaDYGTMr+hsBBWPt6g3xPqU31JgU7QHk2OD36grodDiABnsBl710eFnHjROwNCnilDVDVD9kromcfPXmVjRP90z8E3+mZZHn7wD15q/Hcb1cn4ToJ9/GuxvHrm46O/8Uy24kBTIyGGVH6wQjCuNrSovINh/LLur7aYpKKHmek+a+ReqvuyRs7sElAOJtx/xhywUUuYKCp4VWyxrARM14UYoLnqUeZ81CAioCY4vzGsFtYSSCoBo1A+qQriPv4oidsiV/HXhW08DkOwH5nUGuJV8lCtghzdeRQhn0NfIcrHcdaik8W6AdLL7FmYlldMe+Petpeo4mBOl6vC55yaWbIYNMXuGoK37d8uei0arQzHhadK4eMfYYuRf+B01XGWWg7XxP5dxuI8hkfZkzuM79aadLi8NZAOwIauh13pGV3Z/BKFK+a7BSu+E9Q7VPigN78L/Dpx/ob2q0MjRGM/a7AP4kpPFawhuADb/Da8bva9heugApRm+dRdMlZcy5hF1+x8mozAJgLZrZF/j/neZy48yx1RasQt/pKZOrwP/MQ1doc0RablQrbGaL2mIqrHnjjTqEzhnZmxjKqbqY9KD1zfvgGd5l8wQSu5uAQjUwF8f0yEfx81zX8XaeDt8k73TMnHfe+9H/lOt4GTvQ7W3kh86Bj4JhAEAFKTUXmHm4hElK8N2xJ/woxUg9bTOJNmRaId404TdlOJGcA0/UeGv3IR+cZQYkXzBeQ+1BtrUv3xzsthonV1+B/IutmH7lyPyFblsT2crmeVaf+eR7jL7wUfFpYZcg8RKYNyZxhy2hnU/BGqRz/hxByvvu7e49F0Lc2DJFQG5ygkVO+35DY+0ch+kFMmoCpet7JjW7ZKFUWyk15KACx24anh0sGmbJmxt8CYyBlScNCueh7cCbusaSxnM/6VEUvb5wfA9B/9X0uapg/R/r1oKHqJC25OHuUkmM0ev+adHxXJ8v/lWT5b/8NraetZ/ql5/Oj9KYNR6JqV/jJ+Vym82IuttXIDc+o5ziX01ycuLGk69p2Ew2MOP39qFNQSKQ3aayazT+LUB/niZ4NbTWYx1lEEn7CljOKZBMFFAomvyttkHLh4jR80IjcEr7GwyjTNhGaYXIeQfZrmRqMrJPUnBA11ynK5pq5Hn9FR5XYWgAz2iR2kD5wp25s31pT7SaoSvjd2Db9uWfrz/3FMme8KfGIqHjbce2eH9GJ3dnlS3weA455CIlXXEln2draoUJlW03L/U4NMxqaylOwiTKgFXPUrkYNzJ4lfner9WaMTc14fauPXp2XiaHMRaPgKArMOE8AEs0WMHk4+3HOgXJljTvNWAcLfpe/ZyufO56L85YtcePXpa3nvv1zkNfOe+BEYkQ6wKV33WpZId1dQtBLLbdiWGGeSGQ4k98pKSBuyvCQZ2XOn7C3LtgJIuoL/h30PpzFVpi3LqgPxpVPCHHduSBmQgEaKf0ClDmEZzhxnI1s6rgvYiutjjU1j2HG4xwFSmgoenJCQnXd7iMwlmWiFsrD/H04i+5a/5coLY91CX0UR1umJh7NccW9xLtuENFNXoB9+RT6ISLFaUNvZaSR/t7f2upKDhj7Og6I5VhvIO+JKGE337DvG/rSdpmbNFETdy2g/iwkaSTRBwHO5iVpziu1x/D2cBBprsHFhmnsNmATclnbw6YY1MmJXes5C9gyDyUQHmhVZg/JOdOU/NIIVUGglmOrKP+eJ9VbfjJy+ONgIz86435K9KImO0r3nzGLAIASlEhvE01OPZMJH0nVxxvhYVb2JXCtWUOUQrMYG/zYAYt1BQ54aQVk/SvKgDJn14RrD8+r+UutFz/cpRgAtnMylBLhSTwd3gv9HExFU+rTNwf8G8nxKR1TkDsrGzADmGjQr9/bQLneL3wOEEGy7UUpyPzkXeQraexqXin7flL9lRLc62KP19t0D/k/VISyRovcplKcqO7C0jJtPO7SgMgYHuOoUHlKRoVIlcgNORIfcN9nzZfNZV2JLhOMinjICHJLhsBdLOs19T6XFd6oZcNbT0EMp1r0HY02E5NYTacIINaLByilLXWrRE9USY8v2QrmdFvio07kgCPKeBS8P88lAqjtDet8J0YXTw83Dg+DGNQNUbOFzUCgPLpJn9CgrcfwYNCgL8UzOSEfl6oC4kYEcxPMzUPk0gPV4K4R/O9HSS1qn/1tka+BuUYwmnJQduwDtIMyBS4vvM00RhEW3Vt/tl+SiWEffq8w2NOVnYj9wfZW9fTASsNefF/A/N5A9EeVv9ZRw4f/3IA8TT3/mrGV+137p9Q1an2TxUATvqtSXM+Wp6GK2049XMxZjEEkPkigoZVseb4tddExc+QkxO2tHF56aReCdYvSlGKrSVNJH+d3FBVerVN73+IWZInnjNohgYSjq6xOxByAhfwa8/XrwcQ/lc26EZ13Gf7r+Z6gk1FCj7kPB59HCtMDQRh4oISrE6kitReUDcPtPz/NIwwDV628qx/tR8CkTnFmFxKuAYEI9UjvYE8EqG481NY+rp34TE13I4/WVGC58MuVBfzBgzLwyJ9oLxgMm2ls+L2KolwUphCIX0tT26dnSEfRHsz6abkyGZFq6dqzf2vLdtS0bLgXbWqmp0+O2t3WdgAxMyDLhfLuFAm/DWZDLfO8rrcA8Td3HoIMDmpji+NPKsldVaNc8XS2kdIpEPU34+fT01QOwcQpxGWdcgBshRqw+z+BGGvC65t+gBeI1+p/9hIiPeH8TgTKv9y2y4hStMnr5d6gYjIIsr8B0kmFkXy5vmtaCoyiQEuuYzKYXoAcuSeUtekXpyrVNHzQ28nRkDNQhSAV6x1eG1az9OWq33ZHQ7EFPstJGxiyQJYsErp4H8+SUil+tnzPyHrz2JtPvdVdltU6daTMuxOFWcbfzQr/gc16w26O7A7EYv85JPn9NSZC0gkRpWsNyXEtRAm3H/l7jW6rmrSKq/qSAKoGsIakqgqPXqrpoQtn9HsZH+nCs3p1Qplltb1pi1jz6Fl7L2Ifx9RuUh2E5BP/yIcdUVZb+Ui5wycrJ/HQ2SXEW7shF3V+xQ4TA0Ya/yAJobAmEZViJW2AffvbgXjGArNtkzIn3vgvc+tiUp/VB1iW3cyuEIXAjfAsdW+/jolcQPFGA0M0LcmmRhUoVPgna79Ay8oQesjFvr9w9tDjMYcEYFGDxl/2JswJTW5j7jpzonkKEXaAnTW/KHxq4vCNU3qSyUyA+oz1dCFjlbrH/i3/J57QLCMQOspOinHqvAAvkGSG+uo0jwwJDfnb+g6WThHjhXGCWHcy+zH9toYv/wqivT33i/AA0s7WZM2rdzL9JTAMgLOJGoniacY8MooU/XMP8zp/zDuG60hE+z+1THN+jMapYSz8397oe+MakqlOAjOeZoN3Ms9LHkZQDGa0KfPkNTKa1S+dBxyIygGKqM5d9NOMmJX7h7etjPPAbEj5lbKOUb4CQt3HQlVqR0vCIbUPaNKrOKxGfRJJg1ld9Honucm1nXZ+7dA6sgw9KGnFDbPQhQEyVOAAVIjD/edJkXuOBoeVhsK7ea4K9phRaLFLwA6PgS70ciw1z95uryGYrNZOYEXK2SvavNoUAmurpnYu+AX04d4rLqlq1avKyn/se4V27jt/XcZkCG9RfiAc90OI+deF+NYdmS49KBysi3Bl/52OQEW81KUC3xZqcBKsu+cxBItrrSXnFSocv0y56MSE3GQHDBBp3d0oenwhXjwez6ApQJDAtOA2bBw2gINHZV1vNo3zFQg+YuCV6uT1aWkGXIygf8W4AlxRaf8ZBRlduU9mJFcR7o7xFAI8/lTdaSLxZdt9Y53i8BjVMjSif6HyUtqQRpKVPPTskn7hepq2tRcU/t5OHsGIgdRIoN/slUqjlaHkCuxEGQ8U1hRSrJkpRMDLrcVV9jPfyg9O+dvijdIyH7ivN0ABwEEP2refiaJeAtmLS4ou7+//6a7L+OPpJVSYAZO1H/YecNnKeclQvsKZWdUdhHenW8P7P9ZL7ttNYxjypKIiwMtXTdtE0SwaVX9T8yP5EDYc9bW9iAL+wQRYNeLOvkdvu4cyODPN/XGZl6EG6dpz8HBeYqBfNTyefrdUXhkB6VtLdGlt2jfJWLDSFKm+ihXQnv2XpaofQt748BSFRbq7P1Np2R3ARcCgz9GZMzWie2gZKiDMWH9su0CnAWMa25nUqvfupFN7BrRVzXdXUooqgldCN8wR6NBTpCt4XlRCNceNdQV9EbgeQ3Z3StxLCri9TM0kC+tz/JdqUkDz9s8R/8E0BJkHwhQwo3mUdDDeiO+GmkAX5B1CgBJ4irP2Wl2b7Jg3WSc3kVr7NIK/2iZFOCrWCnfYy1f25qgTdmTN7HiVW4eBaw/ANyTpKFYyhnlcYf0dH2fwTn4Dn4Qpcbm30q8+jZJgRp1lUwVzqeB69W321VCn0Lc1o/15cXptH1k9oGOwjlLJqMAi9dH9OqVyzI0Uf6Xqv2s9rEcY9cMOt0/ENon4qEfNXInd0NeyYGJgakcAC1rWOHp5U4vO7Mwjwfo8TmCrjXv6d8fuhp6y7JJhg46/B9zJJ45x20RZX1R3X5kFfqnxuu35JZer6J15XnL4jj+3Nt0X727h8FB0eBxXO8GsvOugneAJUAx+4pUb/T3M30LBDe+Mnd3EDkVK/wzSCVpKudGwfvtHP/fqMPtzmXZUV8pUK7dJ+FgapPuOaLgpongPIecwBBv0MjQcMzo8CGcPhLrFdZs7LYKCcvgd2gLy/cZ7xgG/pyynAATKeju5kn/+XSPC73O2cy2jRGkIdsW3DfkTel6lAgUIHvrVDg7C9L/wuSZjbiy1h4uSxE4N75/aM/9vBI/iBbJu4pJ/fjSFy79d9RA1k8tJzvUPkFH6krRnTcowUPPBIZXjO1o/yhm8fk/rz6WsB/MRMxjy3C9zWwgmo8nIQ9aFpp/Yv73z5XEG2kklOIoFSL2+wYHJ4FhrZXWDx6Trp8wxe/4eNKGCZZ6leylMqJzZoQU6ss4OZeIGk0yapiVrEbLxmJQenEkzGFVQgdspDU6X4sJFDm1LmSfOeLAUSwSDUyu/Ql5Fqxvz6KoqcD6AAAAA==",
+      "rating": 0,
+      "reviews": 0
+    }
+  ],
+  "cart": [
+    {
+      "id": "1g2AQ3GnJ5s",
+      "userId": "5QEfAKodewU",
+      "productId": "p17",
+      "title": "Mountain Bike 26\" Aluminium",
+      "price": 549,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500",
+      "quantity": 1
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "2o4eOWmKTnc",
+      "userId": "t6_WNPJWfRo",
+      "productId": "p8",
+      "title": "Elegant Summer Dress Floral",
+      "price": 59.99,
+      "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500",
+      "category": "Fashion"
+    },
+    {
+      "id": "BWl-Rr3mMJg",
+      "userId": "5QEfAKodewU",
+      "productId": null,
+      "title": "iPhone 16 Pro Max 256GB",
+      "price": 1199,
+      "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500",
+      "category": "Electronics"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord1",
+      "userId": "u4",
+      "items": [
+        {
+          "productId": "p1",
+          "title": "Sony WH-1000XM5 Headphones",
+          "price": 349.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "productId": "p20",
+          "title": "Wireless Earbuds Pro ANC",
+          "price": 79.99,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totalPrice": 509.97,
+      "paymentMethod": "Credit Card",
+      "status": "delivered",
+      "shippingAddress": {
+        "name": "John Doe",
+        "phone": "555-1234",
+        "address": "123 Main St, New York, NY"
+      },
+      "createdAt": "2024-03-10T10:30:00Z"
+    },
+    {
+      "id": "ord2",
+      "userId": "u5",
+      "items": [
+        {
+          "productId": "p6",
+          "title": "Nike Air Max 270 Sneakers",
+          "price": 149.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+        },
+        {
+          "productId": "p8",
+          "title": "Elegant Summer Dress Floral",
+          "price": 59.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500"
+        }
+      ],
+      "totalPrice": 209.98,
+      "paymentMethod": "Cash on Delivery",
+      "status": "processing",
+      "shippingAddress": {
+        "name": "Sara Smith",
+        "phone": "555-5678",
+        "address": "456 Oak Ave, Los Angeles, CA"
+      },
+      "createdAt": "2024-04-15T14:20:00Z"
+    },
+    {
+      "id": "ord3",
+      "userId": "u4",
+      "items": [
+        {
+          "productId": "p18",
+          "title": "Atomic Habits - James Clear",
+          "price": 16.99,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
+        }
+      ],
+      "totalPrice": 33.98,
+      "paymentMethod": "PayPal",
+      "status": "shipped",
+      "shippingAddress": {
+        "name": "John Doe",
+        "phone": "555-1234",
+        "address": "123 Main St, New York, NY"
+      },
+      "createdAt": "2024-05-01T09:00:00Z"
+    },
+    {
+      "id": "Wvo-qrcaxX0",
+      "userId": "u4",
+      "items": [
+        {
+          "productId": "p12",
+          "title": "Aromatherapy Diffuser Set",
+          "price": 39.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1608181831718-f48ec1bf8ef0?w=500"
+        },
+        {
+          "productId": "p11",
+          "title": "Minimalist Coffee Table Nordic",
+          "price": 249.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500"
+        }
+      ],
+      "totalPrice": 313.18,
+      "paymentMethod": "Cash on Delivery",
+      "status": "processing",
+      "shippingAddress": {
+        "name": "John Doe",
+        "phone": "+201030939197",
+        "address": "assuit\nassuit"
+      },
+      "createdAt": "2026-05-13T22:59:13.915Z"
+    },
+    {
+      "id": "42vZbZ3tRfY",
+      "userId": "t6_WNPJWfRo",
+      "items": [
+        {
+          "productId": "p10",
+          "title": "Luxury Handbag Tote Brown",
+          "price": 89.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500"
+        }
+      ],
+      "totalPrice": 97.19,
+      "paymentMethod": "Credit Card",
+      "status": "processing",
+      "shippingAddress": {
+        "name": "Saraa Elamir",
+        "phone": "+201030939197",
+        "address": "assuit\nassuit"
+      },
+      "createdAt": "2026-05-13T23:12:08.778Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

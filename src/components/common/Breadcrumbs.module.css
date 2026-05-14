@@ -1,0 +1,6 @@
+.breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; margin-bottom: 20px; font-size: 0.83rem; }
+.crumb { display: flex; align-items: center; gap: 4px; }
+.link { color: var(--text-muted); text-decoration: none; transition: var(--transition-fast); }
+.link:hover { color: var(--primary); }
+.sep { color: var(--text-muted); font-size: 0.6rem; margin: 0 2px; }
+.current { color: var(--text-primary); font-weight: 600; }

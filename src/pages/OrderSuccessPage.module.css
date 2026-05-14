@@ -1,0 +1,49 @@
+.page { min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+
+.card {
+  background: var(--bg-card); border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-xl); padding: 48px 40px;
+  max-width: 560px; width: 100%; text-align: center;
+  box-shadow: var(--shadow-xl); animation: fadeInUp 0.5s ease;
+}
+
+@keyframes popIn { 0% { transform: scale(0); opacity: 0; } 70% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+
+.iconCircle {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--success), #059669);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px; color: white; font-size: 2rem;
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s both;
+  box-shadow: 0 12px 32px rgba(16,185,129,0.4);
+}
+
+.title { font-size: 1.8rem; font-weight: 900; color: var(--text-primary); margin-bottom: 8px; }
+.subtitle { color: var(--text-muted); margin-bottom: 28px; font-size: 0.95rem; }
+
+.orderInfo {
+  background: var(--bg-tertiary); border-radius: var(--border-radius);
+  padding: 20px; margin-bottom: 28px; text-align: left;
+}
+
+.orderRow {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 0; border-bottom: 1px solid var(--border-color); font-size: 0.875rem;
+}
+.orderRow:last-child { border-bottom: none; }
+.orderRow span { color: var(--text-muted); }
+.orderRow strong { color: var(--text-primary); font-weight: 700; max-width: 200px; text-align: right; }
+
+.steps { display: flex; align-items: flex-start; justify-content: center; gap: 0; margin-bottom: 32px; }
+.stepItem { display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1; position: relative; font-size: 0.72rem; color: var(--text-muted); font-weight: 600; }
+.stepItem::after { content: ''; position: absolute; top: 12px; left: 50%; width: 100%; height: 2px; background: var(--border-color); z-index: 0; }
+.stepItem:last-child::after { display: none; }
+.stepDot {
+  width: 26px; height: 26px; border-radius: 50%; background: var(--bg-tertiary);
+  border: 2px solid var(--border-color); font-size: 0.7rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; z-index: 1; position: relative;
+}
+.stepActive .stepDot { background: var(--success); border-color: var(--success); color: white; }
+.stepActive { color: var(--success); }
+
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
