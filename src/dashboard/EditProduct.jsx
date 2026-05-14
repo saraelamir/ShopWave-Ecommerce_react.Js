@@ -10,6 +10,7 @@ const EditProduct = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true);
+  const [originalProduct, setOriginalProduct] = useState(null);
   const [form, setForm] = useState({
     title: '', description: '', price: '', originalPrice: '', stock: '', category: '', image: ''
   });
@@ -19,6 +20,7 @@ const EditProduct = () => {
       try {
         const res = await getProductById(id);
         const p = res.data;
+        setOriginalProduct(p);
         setForm({
           title: p.title, description: p.description, price: p.price, originalPrice: p.originalPrice || p.price,
           stock: p.stock, category: p.category, image: p.image
@@ -40,6 +42,7 @@ const EditProduct = () => {
     setLoading(true);
     try {
       const updated = {
+        ...originalProduct,
         ...form,
         price: parseFloat(form.price),
         originalPrice: form.originalPrice ? parseFloat(form.originalPrice) : parseFloat(form.price),

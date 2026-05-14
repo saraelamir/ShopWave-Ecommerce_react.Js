@@ -3,15 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+"scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node node_modules/json-server/lib/bin.js db.json --port 3001",
+    "server": "json-server db.json --port 3001",
     "client": "vite",
-    "start": "concurrently \"npm run server\" \"npm run client\""
-  },
+    "start": "json-server --watch db.json --port 10000",
+    "concurrent": "concurrently \"npm run server\" \"npm run client\""
+},
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
     "@reduxjs/toolkit": "^2.11.2",
