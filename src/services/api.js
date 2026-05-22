@@ -6,13 +6,11 @@ baseURL: 'http://localhost:3001',
   timeout: 10000,
 });
 
-// Request interceptor — attach any auth token if needed in future
 api.interceptors.request.use(
   (config) => config,
   (error) => Promise.reject(error)
 );
 
-// Response interceptor — global error handling
 api.interceptors.response.use(
   (response) => response,
   (error) => {

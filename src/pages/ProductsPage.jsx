@@ -73,12 +73,17 @@ const ProductsPage = () => {
 
           <div className={styles.filterCard}>
             <div className={styles.filterTitle}>Price Range</div>
-            <div className={styles.priceInputs}>
-              <input type="number" className={styles.priceInput} placeholder="Min" value={localMin}
-                onChange={(e) => setLocalMin(e.target.value)} min={0} />
-              <span style={{ color: 'var(--text-muted)' }}>—</span>
-              <input type="number" className={styles.priceInput} placeholder="Max" value={localMax}
-                onChange={(e) => setLocalMax(e.target.value)} max={10000} />
+            <div className={styles.priceInputsVertical}>
+              <div className={styles.priceInputGroup}>
+                <label className={styles.priceLabel}>Min:</label>
+                <input type="number" className={styles.priceInput} placeholder="0" value={localMin}
+                  onChange={(e) => setLocalMin(e.target.value)} min={0} />
+              </div>
+              <div className={styles.priceInputGroup}>
+                <label className={styles.priceLabel}>Max:</label>
+                <input type="number" className={styles.priceInput} placeholder="5000" value={localMax}
+                  onChange={(e) => setLocalMax(e.target.value)} max={10000} />
+              </div>
             </div>
             <button className="btn-primary-custom w-100 mt-3" style={{ justifyContent: 'center' }} onClick={handlePriceApply}>
               Apply Filter

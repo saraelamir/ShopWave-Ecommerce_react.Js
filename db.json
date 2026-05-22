@@ -9,40 +9,8 @@
       "createdAt": "2024-01-01"
     },
     {
-      "id": "u2",
-      "name": "Tech Seller",
-      "email": "seller@shop.com",
-      "password": "seller123",
-      "role": "seller",
-      "createdAt": "2024-01-05"
-    },
-    {
-      "id": "u3",
-      "name": "Fashion Hub",
-      "email": "fashion@shop.com",
-      "password": "fashion123",
-      "role": "seller",
-      "createdAt": "2024-01-08"
-    },
-    {
-      "id": "u4",
-      "name": " saraelamir",
-      "email": "sara@shop.com",
-      "password": "sara1234",
-      "role": "customer",
-      "createdAt": "2024-01-10"
-    },
-    {
-      "id": "u5",
-      "name": "Sara Smith",
-      "email": "sara@shop.com",
-      "password": "sara123",
-      "role": "customer",
-      "createdAt": "2024-01-12"
-    },
-    {
       "id": "t6_WNPJWfRo",
-      "name": "Saraa Elamir",
+      "name": "eman Elamir",
       "email": "emanelamir929@gmail.com",
       "password": "eman2004",
       "role": "seller",
@@ -55,6 +23,14 @@
       "password": "sara123",
       "role": "seller",
       "createdAt": "2026-05-14"
+    },
+    {
+      "id": "tiaWavLW4gw",
+      "name": "sara ",
+      "email": "sara@gmail.com",
+      "password": "sara123",
+      "role": "customer",
+      "createdAt": "2026-05-22"
     }
   ],
   "products": [
@@ -507,6 +483,15 @@
       "price": 1199,
       "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500",
       "category": "Electronics"
+    },
+    {
+      "id": "7GjTNAGn1T0",
+      "userId": "tiaWavLW4gw",
+      "productId": "p9",
+      "title": "Ray-Ban Aviator Sunglasses",
+      "price": 169.99,
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500",
+      "category": "Fashion"
     }
   ],
   "orders": [
@@ -640,6 +625,42 @@
         "address": "assuit\nassuit"
       },
       "createdAt": "2026-05-13T23:12:08.778Z"
+    },
+    {
+      "id": "Nee6OPOXEME",
+      "userId": "tiaWavLW4gw",
+      "items": [
+        {
+          "productId": "p1",
+          "title": "Sony WH-1000XM5 Headphones",
+          "price": 349.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "productId": "p20",
+          "title": "Wireless Earbuds Pro ANC",
+          "price": 79.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        },
+        {
+          "productId": "p9",
+          "title": "Ray-Ban Aviator Sunglasses",
+          "price": 169.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500"
+        }
+      ],
+      "totalPrice": 647.97,
+      "paymentMethod": "PayPal",
+      "status": "processing",
+      "shippingAddress": {
+        "name": "sara ",
+        "phone": "+201030939197",
+        "address": "assuit\nassuit"
+      },
+      "createdAt": "2026-05-22T19:21:16.856Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

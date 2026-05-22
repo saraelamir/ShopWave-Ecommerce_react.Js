@@ -65,7 +65,9 @@
   font-weight: 600;
 }
 
-.priceInputs { display: flex; gap: 8px; align-items: center; }
+.priceInputsVertical { display: flex; flex-direction: column; gap: 12px; }
+.priceInputGroup { display: flex; flex-direction: column; gap: 4px; }
+.priceLabel { font-size: 0.75rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; }
 .priceInput {
   flex: 1;
   padding: 8px 10px;
